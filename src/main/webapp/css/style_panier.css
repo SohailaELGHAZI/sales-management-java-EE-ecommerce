@@ -1,0 +1,270 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.header .logo {
+    border-right: 1px solid #CBB26A;
+}
+
+.header .logo img {
+    width: 198px;
+    background-color: #cbb36a81;
+}
+
+.nav {
+    padding-top: 150px;
+    position: fixed;
+    align-items: center;
+    border-right: 1px solid #cbb36a81;
+    padding-right: 40px;
+    padding-bottom: 500px;
+    background-color: #cbb36a81;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    display: list-item;
+    line-height: 50px;
+}
+
+.nav ul li a {
+    position: relative;
+    text-decoration: none;
+    line-height: 24px;
+    color: black;
+    font-size: 24px;
+}
+
+.nav ul li a:before,
+.nav ul li a:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.ho:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #CBB26A;
+    transform: scaleX(0);
+}
+
+.ho:hover:before {
+    transform: scaleX(1);
+}
+
+.center {
+    z-index: 10000;
+    display: flex;
+    
+}
+
+
+.center .produit {
+    
+    padding-left: 0px;
+    width: 1200px;
+    height: 600px;
+    top: 50%;
+    left: 56%;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 15px 8px 30px #CBB26A;
+    z-index: 10000;
+    display: flex;
+}
+.liste table{
+border-collapse: collapse;
+table-layout: fixed;
+white-space: nowrap;
+
+}
+.liste table img{
+    width: 100px;
+}
+.liste table td:nth-child(1){
+    width: 0px;
+    text-align: center;
+}
+.liste table td:nth-child(2){
+    width: 200px;
+    text-align: center;
+}
+.liste table td:nth-child(3){
+    width: 100px;
+    text-align: center;
+}
+.liste table td:nth-child(4){
+    width: 150px;
+    text-align: center;
+}
+.liste table td:nth-child(5){
+    width: 150px;
+    text-align: center;
+}
+.liste table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+.liste table td:nth-child(5) input
+{
+width: 70px;
+padding: 10px 5px 10px 15px;
+}
+.center table thead{
+    border: 5px solid #fcfaf4;
+    border-left: none;
+    border-right: none;
+}
+.center table thead td{
+font-weight: 700;
+text-transform: uppercase;
+font-size: 13px;
+padding: 18px 0;
+}
+.liste table tbody tr td{
+padding-top: 15px;
+
+
+}
+.liste table tbody  td{
+    font-size: 13px;
+
+    
+    
+    }
+
+.center .liste {
+    padding-left: 10px;
+}
+
+.center .liste table {
+    text-align: center;
+}
+
+.center .liste table tr th {
+    text-align: center;
+    font-size: 18px;
+    background-color: none;
+    padding: 10px 50px;
+    border-top: 1px solid #CBB26A;
+    border-bottom: 1px solid #CBB26A;
+}
+.total{
+width: 50%;
+
+padding-left: 30px;
+background-color: #fcfaf4;
+
+}
+.total table{
+    border-collapse: collapse;
+    width: 450px;
+    
+    
+}
+.total table td{
+    width: 50%;
+    border: 1px solid #CBB26A;
+    padding: 10px;
+    font-size: 13px;
+}
+.total h3{
+    padding-bottom: 40px;
+    padding-left: 150px;
+    
+ 
+}
+.panim img{
+    width: 370px;
+      padding-left: 60px;
+    
+}
+.total button{
+    background-color: #cbb36a81;
+    color: black;
+    padding: 12px 20px;
+    margin-left: 280px;
+}
+.paging-nav {
+    padding-top: 2px;
+    padding-left: 50px;
+}
+
+.paging-nav a {
+    margin: auto 1px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 13px;
+    background: #cbb36a81;
+    color: black;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.paging-nav a:hover {
+    margin: auto 1px;
+    text-decoration: none;
+    border: 1px solid #cbb36a81;
+    padding: 3px 10px;
+    background: white;
+    color: black;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.paging-nav .selected-page {
+    background: #cbb36a81;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.paging-nav,
+#tableData {
+    width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.button{
+    padding-left: 225px;
+}
+#popUpYes {
+    padding: 10px 17px;
+    color: white;
+    background-color: #CBB26A;
+    font-size: 17px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: transform(0.5s);
+    margin-top: 15px;
+    
+}
+
+#popUpYes:hover {
+    background: none;
+    color: black;
+    border: 3px solid #CBB26A;
+}
+

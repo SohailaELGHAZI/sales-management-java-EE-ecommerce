@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 juin 2022 ? 21:12:43 by Hibernate Tools 4.3.6.Final -->
+<hibernate-mapping>
+    <class name="mapping.Users" table="users" catalog="ge_vente" optimistic-lock="version">
+        <id name="codeUser" type="java.lang.Integer">
+            <column name="codeUser" />
+            <generator class="identity" />
+        </id>
+        <property name="nom" type="string">
+            <column name="nom" not-null="true" />
+        </property>
+        <property name="prenom" type="string">
+            <column name="prenom" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="pass" not-null="true" />
+        </property>
+        <property name="login" type="string">
+            <column name="login" not-null="true" />
+        </property>
+        <property name="imageUser" type="string">
+            <column name="image_user" not-null="true" />
+        </property>
+        <set name="commandeses" table="commandes" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="codeUser" not-null="true" />
+            </key>
+            <one-to-many class="mapping.Commandes" />
+        </set>
+    </class>
+</hibernate-mapping>

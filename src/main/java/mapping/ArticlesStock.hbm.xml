@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 juin 2022 ? 21:12:56 by Hibernate Tools 4.3.6.Final -->
+<hibernate-mapping>
+    <class name="mapping.ArticlesStock" table="articles_stock" catalog="ge_stock" optimistic-lock="version">
+        <id name="codeArt" type="int">
+            <column name="CodeArt" />
+            <generator class="assigned" />
+        </id>
+        <property name="nomArt" type="string">
+            <column name="nomArt" not-null="true" />
+        </property>
+        <property name="descArt" type="string">
+            <column name="descArt" length="10000" not-null="true" />
+        </property>
+        <property name="prixArt" type="int">
+            <column name="prixArt" not-null="true" />
+        </property>
+        <property name="qteArt" type="int">
+            <column name="qteArt" not-null="true" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

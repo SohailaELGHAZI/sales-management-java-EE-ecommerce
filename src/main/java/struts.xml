@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<constant name="struts.devMode" value="false"/>
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources"/>
+	<constant name="struts.mapper.action.prefix.enabled" value="true" />
+	
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="login" method="execute" class="user.LoginUser">
+		<result name="input">index.jsp</result>
+		<result name="success">acc.jsp</result>
+		<result name="error">index.jsp</result>
+		</action>
+		
+		<action name="conx" method="connection" class="user.LoginUser">
+		<result name="input">/connection.jsp?page=connection</result>
+		<result name="success">acc.jsp</result>
+		<result name="error">/connection.jsp?page=connection</result>
+		</action>
+		
+		<action name="ajt_pan" method="ajouter" class="commandes.panier">
+		
+		<result name="success">Accuiel.jsp</result>
+		
+		</action>
+		
+		
+		<action name="acht" method="acheter" class="commandes.panier">
+		
+		<result name="success">payer.jsp</result>
+		
+		</action>
+		
+		<action name="acheter_from_pan" method="acheter_panier" class="commandes.panier">
+		
+		<result name="success">payer.jsp</result>
+		
+		</action>
+		
+		<action name="panier" method="panier_o" class="commandes.panier">
+		
+		<result name="success">panier.jsp</result>
+		
+		</action>
+		<action name="acc" method="acc_op" class="commandes.panier">
+		
+		<result name="success">Accuiel.jsp</result>
+		
+		</action>
+		<action name="save_mod" method="update" class="user.Profile">
+		<result name="input">/edit_profile.jsp?page=edit_profile</result>
+		<result name="success">profile.jsp</result>
+		<result name="error">/edit_profile.jsp?page=edit_profile</result>
+		</action>
+		<action name="pro" method="open_modfier" class="user.Profile">
+		
+		<result name="success">edit_profile.jsp</result>
+		
+		</action>
+		<action name="profile" method="open_prof" class="user.Profile">
+		
+		<result name="success">profile.jsp</result>
+		
+		</action>
+		<action name="payer" method="payer" class="commandes.payment">
+		
+		<result name="success">facture.jsp</result>
+		
+		</action>
+		
+		<action name="remove_pan" method="remove_pan" class="commandes.panier">
+		
+		<result name="success">panier.jsp</result>
+		
+		</action>
+	</package>
+</struts>

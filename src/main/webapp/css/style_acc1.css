@@ -1,0 +1,229 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+.nom h3{
+    font-family: "Sofia", sans-serif;
+    font-size: 27px;
+}
+.slider{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    
+}
+@keyframes rotate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slider span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    
+}
+.slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+
+
+}
+.slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+    }
+
+.header {
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    width: 100%;
+    border-bottom: 1px solid #cbb36a81;
+    margin-right: 30px;
+}
+
+.header .logo {
+    border-right: 1px solid #CBB26A;
+}
+
+.header .logo img {
+    width: 198px;
+    background-color: #cbb36a81;
+}
+
+#popUpOut {
+    padding: 15px 10px;
+    color: white;
+    background-color: #CBB26A;
+    font-size: 15px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: transform(0.5s);
+    margin-top: 7px;
+    margin-right: 15px;
+    border-radius: 50px;
+}
+
+#popUpOut:hover {
+    background: none;
+    border-radius: 50px;
+    color: black;
+    border: 2px solid #CBB26A;
+}
+
+#popUpOut1 {
+    color: white;
+    background: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: transform(0.5s);
+}
+
+#popUpOut1:hover {
+    background: none;
+    color: black;
+}
+
+.center {
+    z-index: 10000;
+    display: flex;
+    
+}
+.center .fat {
+    padding-top: 170px;
+    padding-left:200px;
+}
+.center .nom {
+    padding-left: 250px;
+   font-style: unset;
+  
+}
+.slider span img{
+    background-color:#cbb36a81 ;
+}
+
+.nav {
+    padding-top: 140px;
+    align-items: center;
+    border-right: 1px solid #cbb36a81;
+    padding-right: 40px;
+    padding-bottom: 500px;
+    background-color: #cbb36a81;
+    position: fixed;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    display: list-item;
+    line-height: 50px;
+}
+
+.nav ul li a {
+    position: relative;
+    text-decoration: none;
+    line-height: 24px;
+    color: black;
+    font-size: 24px;
+}
+
+.nav ul li a:before,
+.nav ul li a:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.ho:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #CBB26A;
+    transform: scaleX(0);
+}
+
+.ho:hover:before {
+    transform: scaleX(1);
+}
+
+.center .produit {
+    padding-top: 150px;
+    padding-left: 300px;
+}
+
+.center .produit h1 {
+    text-align: center;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 27px;
+    min-width: 50px;
+    color: #CBB26A;
+}
+
+.input-field {
+    outline: none;
+    background: white;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #CBB26A;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border-radius: 50px;
+    border: 3px solid black;
+    padding-left: 45px;
+    margin: 15px auto;
+    background: url(https://vector.me/files/images/1/6/164514/x_icon_clip_art.jpg) no-repeat right -14px center;
+    background-size: 12px;
+    transition: background 0.4s;
+    /*REMOVE THIS LINE IF YOU ENCOUNTER ISSUES IN Chrome (Bug 02.2014)*/
+}
+
+.input-field.x {
+    background-position: right 5px center;
+}
+
+.input-field.onX {
+    cursor: pointer;
+}
+
+.center .produit table {
+    text-align: center;
+}
+
+.cart {
+    color: #CBB26A;
+}
+

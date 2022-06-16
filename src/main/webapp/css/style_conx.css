@@ -1,0 +1,139 @@
+body {
+    background-color: white;
+}
+
+.container {
+    width: 1200px;
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 15px 8px 30px #CBB26A;
+}
+
+.center {
+    z-index: 10000;
+    display: flex;
+    position: fixed;
+}
+
+.container .logo img {
+    width: 150px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.container .imag img {
+    width: 450px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.form {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.form h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Abril Fatface';
+    padding-left: 10px;
+}
+
+.inp {
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+.inp input {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 500px;
+}
+
+.parameter {
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#memo {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 3px;
+    font-style: bold;
+}
+
+.parameter a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-top: 3px;
+    font-style: bold;
+    padding-left: 150px;
+}
+
+.parameter a:hover {
+    font-size: 18px;
+    transition: transform(0.5s);
+    text-decoration: underline;
+}
+
+.button {
+    padding-left: 200px;
+    padding-top: 15px;
+}
+
+#popUpYes {
+    padding: 15px 100px;
+    color: white;
+    background-color: #CBB26A;
+    font-size: 20px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: transform(0.5s);
+    margin-top: 15px;
+    border-radius: 50px;
+}
+
+#popUpYes:hover {
+    background: none;
+    border-radius: 50px;
+    color: black;
+    border: 2px solid #CBB26A;
+}
+
+.button1 {
+    padding-left: 200px;
+}
+
+.button1 button {
+    padding: 15px 88px;
+    color: white;
+    background-color: #CBB26A;
+    font-size: 20px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: transform(0.5s);
+    margin-top: 15px;
+    border-radius: 50px;
+}
+
+.button1 button:hover {
+    background: none;
+    border-radius: 50px;
+    color: black;
+    border: 2px solid #CBB26A;
+}

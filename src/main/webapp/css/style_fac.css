@@ -1,0 +1,206 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.logo h1 {
+    text-align: right;
+    margin-right: 80px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Yellowtail';
+}
+
+.center h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.center .produit {
+    z-index: 10000;
+    display: flex;
+}
+
+.center .produit .info {
+    padding-left: 100px;
+    padding-right: 985px;
+}
+
+.center .produit .info p {
+    font-size: 20px;
+}
+
+.center .produit .info2 p {
+    font-size: 20px;
+}
+
+.center .tab {
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+.center .tab h3 {
+    color: #cbb36ae7;
+    font-style: italic;
+    font-family: 'Yellowtail';
+}
+
+.center table {
+    text-align: center;
+}
+
+.center table tr th {
+    text-align: center;
+    font-size: 18px;
+    background-color: #cbb36a7a;
+    padding: 20px 80px;
+}
+
+.center table tr td {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 80px;
+}
+
+.center #tab2 {
+    padding-left: 881px;
+    padding-top: 1px;
+}
+
+.center #tab2 table {
+    border: 1px solid #DDDDDD;
+}
+
+.center #tab2 table tr th {
+    padding: 15px 96px;
+    background-color: white;
+    border-right: 1px solid #DDDDDD;
+}
+
+.center #tab2 table tr td {
+    padding: 15px 80px;
+    border-right: 1px solid #DDDDDD;
+}
+
+.bn {
+    padding-top: 30px;
+    padding-left: 940px;
+    
+}
+
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+   
+}
+
+.download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 12px 30px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #242a35;
+    border: solid 1px #e8e8e82d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #cbb36a;
+    border: solid 1px #cbb36a93;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+    transform: translateY(100%)
+}
+
+.download svg polyline,
+.download svg line {
+    animation: docs 1s infinite;
+}
+
+@keyframes docs {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.sumb {
+    display: flex;
+    padding-left: 100px;
+}
+
+.bn1 {
+    padding-top: 20px;
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.icon-input-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 12px 50px;
+    padding-left: 70px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #242a35;
+    border: solid 1px #e8e8e82d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+    font-size: 15px;
+   text-decoration: none;
+    color: white;
+}
+
+.icon-input-btn a:hover {
+	text-decoration: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.icon-input-btn .fa {
+    display: inline-block;
+    position: absolute;
+    left: 0.65em;
+    font-size: 23px;
+    padding-right: 15px;
+    padding-top: 11px;
+    padding-left: 20px;
+}

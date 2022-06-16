@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 juin 2022 ? 21:12:43 by Hibernate Tools 4.3.6.Final -->
+<hibernate-mapping>
+    <class name="mapping.Commandes" table="commandes" catalog="ge_vente" optimistic-lock="version">
+        <id name="codeCmd" type="java.lang.Integer">
+            <column name="codeCmd" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="articlesPrix" class="mapping.ArticlesPrix" fetch="select">
+            <column name="codeArt" not-null="true" />
+        </many-to-one>
+        <many-to-one name="users" class="mapping.Users" fetch="select">
+            <column name="codeUser" not-null="true" />
+        </many-to-one>
+        <property name="qteCmd" type="int">
+            <column name="qteCmd" not-null="true" />
+        </property>
+        <property name="dateCmd" type="date">
+            <column name="dateCmd" length="10" not-null="true" />
+        </property>
+        <property name="etatCmd" type="string">
+            <column name="etatCmd" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
